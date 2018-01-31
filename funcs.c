@@ -7,7 +7,7 @@ int main()
 	int i, n, sum = 0, num;
 	float avg;	
 	
-	printf("1: Addition\n2: Subtraction\n3: Multiplication\n4: Division\n5:Average\n6:Remainder\n");
+	printf("1: Addition\n2: Subtraction\n3: Multiplication\n 4: Division\n 5:Average\n 6:Remainder\n 7:Min Max\n");
 	printf("Enter the number correspoding to the function you want to perform:\n");
 	scanf("%d",&opt);
 	
@@ -70,6 +70,13 @@ int main()
 
 			printf("%d mod %d = %d\n", var1, var2, var1 % var2); 				
 	
+		//Min Max
+		case 7:
+			printf("Enter 5 variables:\n");
+			scanf("%d%d", &var1, &var2);
+
+			printf("%d mod %d = %d\n", var1, var2, var1 % var2); 
+
 		//If wrong option is selected
 		default:
 			printf("Option not on the list\n");
